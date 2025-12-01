@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apps Download</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header with Search Bar -->
+  <header>
+    <h1>📱Free Download More App</h1>
+   
+       
+    <input
+      type="text"
+      id="searchBar"
+      placeholder="Saka app..."
+      oninput="searchApps()"
+    >
+  </header>
+    <h2>🌟Featured Apps</h2>
+  <!-- 📱 Main App List -->
+  <main id="appList">
+    <div class="app-card" data-category="Chat">
+      <h2>Wanderslapp</h2>
+      <div class="app-row">
+        <img src="images/wanderslapp chat.png" alt="Wanderslapp">
+        <a
+          href="https://archive.org/download/wanderslapp/wanderslapp.apk"
+          download
+          class="download-btn"
+        >Download App</a>
+        <button
+          class="info-btn"
+          onclick="showInfo(
+            'Wanderslapp',
+            '30.2MB',
+            'App yopangidwa ndi Isaac Wonderford waku Mulanje. Pa application imeneyi muzitha kucheza ndikuthandizana nzeru monga za Bizinesi ndi anzanu.<br> Mutha kumacheza monga guru. Koma ngati mukufuna kucheza privete ndi munthu wina ndizothekanso, muloweleni ku inbox ndikucheza nkhani zakumtima kwanu.<br>Mwachidule iyi ndi application yothandiza pamachezedwe.'
+          )"
+        >See Info</button>
+      </div>
+    </div>
+    
+    <div class="app-card" data-category="Chat">
+      <h2>WanderStore</h2>
+      <div class="app-row">
+        <img src="images/logo1.jpeg" alt="Wanderslapp">
+        <a
+          href="https://archive.org/download/wanderslapp/wanderslapp.apk"
+          download
+          class="download-btn"
+        >Download App</a>
+        <button
+          class="info-btn"
+          onclick="showInfo(
+            'WanderStore',
+            '30.2MB',
+            'Iyi ndi application yomwe inapangidwa ndi Isaac Wonderford waku Mulanje.<br> Pangani download app imeneyi chifukwa pa application imeneyi pali zambiri zomwe mungathe kusangalala nazo monga;<h3>nyimbo, ma vidiyo, ma android application, ma desktop apps ndizina zambiri.'
+          )"
+        >See Info</button>
+      </div>
+    </div>
+
+     <div class="app-card" data-category="Chat">
+      <h2>Free Market</h2>
+      <div class="app-row">
+        <img src="images/freemarket.png" alt="Wanderslapp">
+        <a
+          href="https://archive.org/download/wanderslapp/wanderslapp.apk"
+          download
+          class="download-btn"
+        >Download App</a>
+        <button
+          class="info-btn"
+          onclick="showInfo(
+            'Free Market',
+            '32.2MB',
+            'App yopangidwa ndi Isaac Wonderford waku Mulanje.<br>App iyi ikuthandizani kugula kapena kugulitsa malonda mosavuta.<br>Pangani Download app imeneyi kuti mudzipeza mwachangu katundu amene mukufuna kugula.<br>Ndi app imeneyi simungavutike kupeza makasitomala omwe angagule katundu wanu.<br>Gulitsani katundu wina aliyense monga;<h3>za electronic, zakumunda, muthanso kugulitsa Lutso lomwe mulinalo<h3>.'
+          )"
+        >See Info</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ℹ️ Info Modal -->
+  <div id="infoModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p><strong>Kukula:</strong> <span id="modalSize"></span></p>
+      <p><strong>Mafotokozedwe:</strong><br><span id="modalDesc"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
